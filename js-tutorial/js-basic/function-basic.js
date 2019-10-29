@@ -26,6 +26,7 @@ function fun() {
 fun()
 
 // example 2: has error in this example.
+let i;
 function function1() {
   function function2() {
     i = 100;
@@ -34,3 +35,12 @@ function function1() {
   console.log(i); // 100
 }
 function1();
+
+
+// example 3: addition.
+function cal_addition(num1, num2) {
+  return num1+num2;
+}
+
+let res = cal_addition(1, 2)
+console.log('res', res);

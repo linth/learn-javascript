@@ -13,3 +13,10 @@ while (x <= 4) {
   console.log('The value of x is ' + x);
   x++;
 }
+
+let y = 1;
+// should be consider the infinite loop for while loop.
+while (y == 1) {
+  console.log('In this while loop.');
+  break;
+}
