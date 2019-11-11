@@ -44,3 +44,19 @@ function cal_addition(num1, num2) {
 
 let res = cal_addition(1, 2)
 console.log('res', res);
+
+// example 4: return several values.
+function get_add_and_pos(x, y) {
+  let o = Object();
+  o['add'] = x + y;
+  o['pos'] = x - y;
+
+  // return {
+  //   'add': x+y,
+  //   'pos': x-y
+  // }
+  return o
+}
+
+let res2 = get_add_and_pos(3, 2)
+console.log(res2, typeof(res2), res2['add'], typeof(res2['add']));
