@@ -1,6 +1,7 @@
 /*
 References:
   - https://www.geeksforgeeks.org/javascript-callbacks/
+  - https://cythilya.github.io/2018/10/30/callback/
 */
 
 // example 1:
