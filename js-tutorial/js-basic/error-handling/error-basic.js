@@ -54,7 +54,7 @@ const ex6 = () => {
   try {
     if (coco > 400) {
       throw 'coco > 400';
-    } else if (coco == 400) {
+    } else if (coco === 400) {
       console.log('coco = 400');
     } else {
       console.log('coco < 400');
