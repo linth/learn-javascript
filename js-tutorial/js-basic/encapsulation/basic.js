@@ -1,8 +1,8 @@
 /* the encapsulation of OOP has four categories: 
-    1) 私有, 
-    2) 特權, 
-    3) 共有静態, 
-    4) 共有,
+    1) 私有: 函數內之var即屬此類
+    2) 特權: 函數內用this關鍵字即屬此類，在函數外可呼叫
+    3) 共有静態: 可以想成class method，直接用建構式呼叫之
+    4) 共有,: 直接鏈在prototype的方式
     https://ithelp.ithome.com.tw/articles/10109161
 */
 
