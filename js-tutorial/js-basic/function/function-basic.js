@@ -1,5 +1,11 @@
 /*
-  References:
+Goal: how to use function concept to isolate another code.
+
+keyword:
+  - function
+  - javascript
+
+References:
   - https://www.geeksforgeeks.org/understanding-variable-scopes-in-javascript/
 */
 
@@ -13,20 +19,22 @@ function printHello() {
   console.log(local_var);
 }
 
-printHello();
-console.log(global_var);
-// console.log(local_var); // ReferenceError: local_var is not defined
-
 function fun() {
   let global_var = 'This is a local variable.';
   console.log(global_var); // This is a local variable.
   // console.log(window.global_var); // error??
 }
 
-fun()
+
+function example() {
+  printHello();
+  console.log(global_var);
+  // console.log(local_var); // ReferenceError: local_var is not defined
+  fun()
+}
 
 // example 2: has error in this example.
-let i;
+var i;
 function function1() {
   function function2() {
     i = 100;
@@ -39,11 +47,13 @@ function1();
 
 // example 3: addition.
 function cal_addition(num1, num2) {
-  return num1+num2;
+  return num1 + num2;
 }
 
-let res = cal_addition(1, 2)
-console.log('res', res);
+function example3() {
+  var res = cal_addition(1, 2)
+  console.log('res', res);
+}
 
 // example 4: return several values.
 function get_add_and_pos(x, y) {
