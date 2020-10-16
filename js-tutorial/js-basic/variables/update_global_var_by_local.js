@@ -6,14 +6,16 @@ function f1() {
     console.log('a', a); // 2
 
     var aa = 3;
-    console.log('aa', aa); // 3, in this case, "aa" is f1.aa
+    console.log('the aa is in the f1(): ', aa); // 3, in this case, "aa" is f1.aa
 
     this.b = 10;
 }
 
+console.log('the aa is = ', aa);
+
 function f2() {
     aa += 5;
-    console.log('aa', aa); // 6
+    console.log('the aa is in the f2(): ', aa); // 6
 }
 
 
