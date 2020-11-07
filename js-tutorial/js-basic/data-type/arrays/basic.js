@@ -29,7 +29,16 @@ const example1 = () => {
   const useArrayDirect = () => {
     // console.log(arr);
     arr.push(9);
-    // console.log(arr);
+    console.log('arr', arr);
+
+    arr.pop();
+    console.log('after arr', arr);
+
+    arr.shift(); // remove the first index. Extracts the first element of the array and return it.
+    console.log('shift arr', arr);
+
+    arr.unshift(100); // add the element to the beginning of the array.
+    console.log('unshift arr', arr);
   }
 
   const useCopyArray = (array) => {
@@ -41,6 +50,8 @@ const example1 = () => {
   useCopyArray(arr);
   console.log(arr);
   console.log(new_array);
+
+  useArrayDirect();
 }
 
 example1();
