@@ -1,4 +1,7 @@
 /*
+變數 variable
+
+
 Reference:
     - https://ithelp.ithome.com.tw/articles/10103433
 
