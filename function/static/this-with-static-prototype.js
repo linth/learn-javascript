@@ -27,3 +27,4 @@ console.log(speak()); // undefined
 Animal.eat();
 const eat = Animal.eat;
 console.log(eat()); // undefined
+console.log(Animal.eat); // [Function: eat]
