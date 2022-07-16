@@ -1,4 +1,6 @@
 /*
+Callback:
+
   Goal: learn how to handle the function of callback.
 
   Content:
@@ -16,12 +18,9 @@ function sayHi(callback) {
   console.log('end calling sayHi()...');
 }
 
-function callme() {
-  console.log('call callme()...');
+function callback() {
+  console.log('call callback 函式...');
 }
 
-function main() {
-  sayHi(callme);
-}
+sayHi(callback);
 
-main();
