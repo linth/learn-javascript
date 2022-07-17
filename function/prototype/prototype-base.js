@@ -1,6 +1,7 @@
 /**
- * prototype method
+ * prototype-base method
  * 
+ * TODO: 增加多點解釋跟範例。
  * 
  * Reference:
  *  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
