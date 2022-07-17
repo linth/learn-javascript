@@ -1,5 +1,7 @@
 /**
  * Generator method
+ *  - ... 
+ *  - 使用 *function_name
  * 
  * Reference:
  *  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
