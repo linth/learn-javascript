@@ -17,7 +17,7 @@ Reference:
 */
 
 // ! let work in the block of function. { }
-// * example 1
+// * 請參考 1-1_block-let-var.js
 {
     let a = 10;
     var b = 1;
@@ -26,13 +26,14 @@ Reference:
 // console.log('a = ', a); // a is not defined.
 console.log('b = ', b);
 
-// * example 2: using let.
+
+// * example 2: using let. (跟上方範例類似)
 for (let i=0; i<10; i++) {
 
 }
 // console.log(i); // i is not defined.
 
-// * example 3: using var.
+// * example 3: using var. 
 // TODO: check the concept.
 var a = [];
 console.log('a', a);
