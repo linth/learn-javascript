@@ -69,6 +69,7 @@ if (true) {
 }
 
 // * example 6: 不同block內的區域變數
+// * 請參考 1-3_different-block.js
 // ! [重要觀念]
 var hh = 4;
 {
@@ -92,6 +93,7 @@ console.log('hh', hh); // hh 4
 
 
 // * example 7: block {} and function ()
+// * 請參考 1-4_block-function.js
 // ! [重要觀念] ES5規定 function不能在block宣告，下面範例是屬非法使用，但瀏覽器沒遵守次規定，所以可以在瀏覽器上使用不會錯誤。
 // ? scenario 1.
 if (true) {
