@@ -12,9 +12,11 @@
  *  - https://github.com/airbnb/javascript
  */
 
-const boo = 1;
+const foo = 1;
 let bar = foo;
 
 bar = 9;
 
-console.log(boo, bar); // 
+console.log(foo, bar); // 1 9
+
+// Symbols and BigInts cannot be faithfully polyfilled, so they should not be used when targeting browsers/environments that don’t support them natively.
