@@ -5,7 +5,7 @@
  *  - function
  * 
  * Reference:
- *  - 
+ *  - https://github.com/airbnb/javascript#table-of-contents
  */
 
 const foo = [1, 2];
