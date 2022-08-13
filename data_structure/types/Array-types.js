@@ -34,7 +34,7 @@ for (let i=0; i<itemsCopy.length; i++) {
 
 // good
 const itemsCopys = [...items]; // [1, 2, 4]
-
+console.log(itemsCopy);
 
 // 4.4 To convert an iterable object to an array, use spreads ... instead of Array.from
 const foo = document.querySelectorAll('.foo');
