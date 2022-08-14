@@ -1,5 +1,5 @@
 /**
- * Array map function
+ * map function
  *  - map() 回傳返回一個 array
  * 
  * Reference:
