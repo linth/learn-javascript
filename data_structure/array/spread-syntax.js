@@ -1,6 +1,7 @@
 /**
  * 展開運算子 Spread syntax 
  *  - apply() 接受一組陣列形式的參數。
+ *  - 三個點 ...
  * 
  * Reference:
  *  - https://es6.ruanyifeng.com/#docs/array
@@ -13,9 +14,21 @@ function sum(x, y, z) {
 
 const numbers = [1, 2, 3];
 
+console.log(...numbers); // 1 2 3
 console.log(sum(...numbers)); // 6
 console.log(sum.apply(null, numbers));
 
+function receivedParams(...params) {
+    console.log('params', ...params);
+    // params.map( x => {
+    //     console.log(x, Math.pow(x, 2));
+    // })
+    return params.map(x => Math.pow(x, 2));
+}
+
+console.log('hello');
+console.log('first argument', receivedParams(...numbers));
+console.log('seconde argument', receivedParams(1, 2, 3, 6, 88, 100));
 
 // 語法
 // fun.apply(thisArg, [argsArray])
