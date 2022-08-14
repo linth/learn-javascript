@@ -26,7 +26,6 @@ function receivedParams(...params) {
     return params.map(x => Math.pow(x, 2));
 }
 
-console.log('hello');
 console.log('first argument', receivedParams(...numbers));
 console.log('seconde argument', receivedParams(1, 2, 3, 6, 88, 100));
 
