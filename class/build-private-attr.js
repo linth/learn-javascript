@@ -9,7 +9,7 @@
 
 class Rectangle {
 
-    #height = 0;
+    #height = 0; // private field.
     #width;
 
     constructor(height, width) {
