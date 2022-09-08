@@ -26,3 +26,43 @@ class C {
 
 let c = new C(180, 77);
 console.log(c.height, c.weight); // 180 77
+
+// Literal constructor (broken up)
+var order = {};
+order.id = 1;
+
+console.log(order.id); // 1
+order.custom = {};
+console.log(order.custom.id); // undefined
+
+
+// Literal Constructor (in one statement)
+var order = {
+    id: 1, 
+    customer: {
+        id: 1
+    }
+};
+
+
+// Custom Constructor Functions (standard), 
+//* old school javascript option.
+function Order(id) {
+    this.id = id;
+}
+
+var o = new Order();
+console.log(o.id); // undefined
+
+var p = new Order(3);
+console.log(p.id); // 3
+
+
+// Custom Constructor Functions (using an extra reference) 
+// * 差別在於使用一個變數去reference object.
+var Order = function(id) {
+    this.id = id;
+}
+
+var q = new Order(4);
+console.log(q.id); // 4
