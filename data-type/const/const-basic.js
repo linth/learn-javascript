@@ -25,3 +25,14 @@ if (true) {
     const MAX = 5;
 }
 // console.log('MAX', MAX); // ReferenceError: MAX is not defined
+
+
+
+
+const res = [];
+console.log('res', res);
+res.push(1);
+res.push(3);
+res.push(16);
+console.log('res', res);
+
