@@ -17,7 +17,7 @@ function print_string(str, cb) {
     }, 1000)
 }
 
-
+// callback hell.
 function printAll() {
     // ! callback hell!!!  how to fix this callback hell: it's not easy to maintain your code?
     print_string('a', () => {
