@@ -1,5 +1,5 @@
 /**
- * 
+ * async with promise.
  * 
  * Reference:
  *  - 
@@ -7,9 +7,10 @@
 function print_string(str, cb) {
     // print string per second.
     return new Promise((resolve, reject) => {
+        // 當非同步動作成功時，呼叫 resolve()，而失敗時則呼叫 reject()
         setTimeout(() => {
-            console.log(str);
-            resolve()
+            console.log(str); sss
+            resolve();
         }, 1000)
     })
 }
