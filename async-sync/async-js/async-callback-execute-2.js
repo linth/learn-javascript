@@ -20,7 +20,7 @@
     function main() {
         console.log('call main function');
     
-        setTimeout(f1, 0);
+        setTimeout(f1, 0); // 非同步會先放到 task queue，等全部執行完後，才開始處理非同步動作。
         f2();
     }
     
