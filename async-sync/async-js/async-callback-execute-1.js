@@ -15,20 +15,22 @@
  */
 
 
-function printMe() {
-    console.log('call printMe function');
+{
+    function printMe() {
+        console.log('call printMe function');
+    }
+    
+    function test() {
+        console.log('call test function');
+    }
+    
+    setTimeout(printMe, 2000); // callback function
+    test();
+    
+    /**
+     * Results:
+     * 
+     * call test function
+     * call printMe function
+     */
 }
-
-function test() {
-    console.log('call test function');
-}
-
-setTimeout(printMe, 2000); // callback function
-test();
-
-/**
- * Results:
- * 
- * call test function
- * call printMe function
- */

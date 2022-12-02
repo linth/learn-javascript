@@ -8,28 +8,30 @@
  */
 
 
-function f1() {
-    console.log('call f1 function');
+{
+    function f1() {
+        console.log('call f1 function');
+    }
+    
+    function f2() {
+        console.log('call f2 function');
+    }
+    
+    function main() {
+        console.log('call main function');
+    
+        setTimeout(f1, 0);
+        f2();
+    }
+    
+    main();
+    
+    
+    /**
+     * Results:
+     * 
+     * call main function
+     * call f2 function
+     * call f1 function
+     */
 }
-
-function f2() {
-    console.log('call f2 function');
-}
-
-function main() {
-    console.log('call main function');
-
-    setTimeout(f1, 0);
-    f2();
-}
-
-main();
-
-
-/**
- * Results:
- * 
- * call main function
- * call f2 function
- * call f1 function
- */
