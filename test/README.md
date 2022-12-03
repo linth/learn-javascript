@@ -75,6 +75,13 @@ Time:        0.745 s, estimated 1 s
 Ran all test suites.
 ```
 
+# Next functions ? 
+- [x] toBe function
+- [x] not.toBe function
+- [ ] toBeNull function
+- [ ] toBeLessThan
+- [ ] toBeLessThanOrEqual
+
 
 # Reference
 - [Jest 基本介紹與教學](https://www.youtube.com/watch?v=WYqXyQz2TdA)
