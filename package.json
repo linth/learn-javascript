@@ -1,0 +1,27 @@
+{
+  "name": "learn-javascript",
+  "version": "1.0.0",
+  "description": "- [MohammedHamzaMalik - 100-Days-of-JavaScript-Code](https://github.com/MohammedHamzaMalik/100-Days-of-JavaScript-Code)\r - [50-days-of-code-challenge](https://github.com/hugofolloni/50-days-of-code-challenge)\r - [analuisadev - 100-Days-of-JavaScript](https://github.com/analuisadev/100-Days-of-JavaScript)\r - [SeshanPillay25 - 100-days-of-code](https://github.com/SeshanPillay25/100-days-of-code)\r - [Asabeneh - 30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)\r - [Aoussiad-Mehdi - HTML-CSS-JavaScript-100-days-of-code-challenge](https://github.com/Aoussiad-Mehdi/HTML-CSS-JavaScript-100-days-of-code-challenge)\r - [jstraining - 全栈工程师培训材料](https://github.com/linth/jstraining)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linth/learn-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linth/learn-javascript/issues"
+  },
+  "homepage": "https://github.com/linth/learn-javascript#readme",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "jsonserver": "^0.1.6"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
