@@ -1,7 +1,9 @@
-/*
-Reference:
-    - https://ithelp.ithome.com.tw/articles/10104073
-*/
+/**
+ * for-loop base 2.
+ * 
+ * Reference:
+ *  - https://ithelp.ithome.com.tw/articles/10104073
+ */
 
 var arr = [1, 2, 6, 22, 8, 10];
 
