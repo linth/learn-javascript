@@ -29,8 +29,8 @@
     console.log('I\'m null.');
   }
 
+  // 可以使用 typeof 檢測對象是誰!
   console.log(typeof(happy)); // object
   console.log(!happy); // true
-
   
 }
