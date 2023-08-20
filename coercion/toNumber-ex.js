@@ -1,6 +1,12 @@
 /**
  * ToNumber
  * 
+ *  - undefined -> NaN
+ *  - null -> 0
+ *  - boolean (true) -> 1; (false) -> 0
+ *  - string -> 數字 or NaN
+ *  - object 
+ * 
  * Reference:
  *  - https://www.cythilya.tw/2018/10/15/coercion/
  */
