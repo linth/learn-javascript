@@ -18,14 +18,15 @@
   function cache_before_calculating(func) {
     var ans = {}
 
-    return function(num) {
-      if(ans[num]) {
+    const a = function(num) {
+      if (ans[num]) {
         return ans[num]
       }
-
       ans[num] = func(num)
       return ans[num]
     }
+
+    return a
   }
 
   const cbc = cache_before_calculating(square);
@@ -34,5 +35,13 @@
   console.log(cbc(20));
 
   // TODO: think about why square() cannot show log information.
+  // FIXME: Create a constant variable to denote a function; it seems to work.
+  /** result:
+   * 
+   * calculate square.
+   * 400
+   * 400
+   * 400
+   */
 }
 
