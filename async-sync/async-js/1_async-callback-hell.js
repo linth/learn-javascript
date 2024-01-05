@@ -3,7 +3,6 @@
  *  - 可以使用 promise 來解決 callback hell 問題!
  * 
  * Reference:
- *  - https://www.eruditeisland.com/article/9745330529/
  *  - https://www.gushiciku.cn/pl/ggZi/zh-tw
  */
 
@@ -18,6 +17,10 @@ function print_string(str, cb) {
 }
 
 // callback hell.
+/**
+ * 由於你想要依序print, a, b, c, 最後才是end. 
+ * 實作方式就可以用傳統的callback function, 但這樣的寫法會造成callback hell, 程式方面也相對不好開發.
+ */
 function printAll() {
     // ! callback hell!!!  how to fix this callback hell: it's not easy to maintain your code?
     print_string('a', () => {
