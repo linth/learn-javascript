@@ -1,5 +1,7 @@
 /*
 Goal: how to use function concept to isolate another code.
+  - control flow
+  - imperative & declarative
 
 keyword:
   - function
