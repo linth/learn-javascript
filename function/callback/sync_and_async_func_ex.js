@@ -41,6 +41,8 @@
   function execute_async_cbs(cb) {
     console.log('start execute_async_cbs().');
     setTimeout(cb, 0);
+    cb5();
+    setTimeout(cb5);
     console.log('end execute_async_cbs().');
   }
 
@@ -48,10 +50,16 @@
     console.log('cb 4');
   }
 
+  async function cb5() {
+    console.log('cb 5');
+  }
+
   execute_async_cbs(cb4);
   /**
    * start execute_async_cbs().
+   * cb 5
    * end execute_async_cbs().
    * cb 4
+   * cb 5
    */
 }
