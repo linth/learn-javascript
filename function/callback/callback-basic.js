@@ -1,5 +1,5 @@
 /*
-Callback:
+Callback 基本觀念:
 
   Goal: learn how to handle the function of callback.
 
