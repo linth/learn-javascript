@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/linth/learn-javascript#readme",
   "dependencies": {
+    "amqplib": "^0.10.3",
     "axios": "^1.2.0",
     "jsonserver": "^0.1.6"
   },
