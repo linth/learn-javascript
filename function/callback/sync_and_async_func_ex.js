@@ -1,5 +1,5 @@
 /**
- * sync & async function example.
+ * sync & async function example. (同步/非同步函數範例)
  * 
  * @param {*} cb 
  */
