@@ -7,3 +7,8 @@ const hashDigest = sha256(nonce + message);
 const hmacDigest = Base64.stringify(hmacSHA512(path + hashDigest, privateKey));
 
 console.log(hmacDigest);
+
+/**
+ * 
+ * 19RTgfqlK63I5dq7bFnRf3pYWuh2MPSMfYLD03ePc8wYNxX7ilAYhBUwg8CHPAHliUGPo6qN2dai61vex3Dv3A==
+ */
