@@ -1,3 +1,7 @@
+/**
+ * https://github.com/brix/crypto-js
+ */
+
 const sha256 = require('crypto-js/sha256');
 const hmacSHA512 = require('crypto-js/hmac-sha512');
 const Base64 = require('crypto-js/enc-base64');
