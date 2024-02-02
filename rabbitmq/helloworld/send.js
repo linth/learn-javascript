@@ -9,6 +9,8 @@
  */
 
 var amqp = require('amqplib/callback_api');
+var queue = 'hello';
+var msg = 'Hello World!';
 
 amqp.connect({url: 'amqp://localhost', username: 'guest', password: 'guest', port: 5672}, function(error0, connection) {
     if (error0) {
@@ -18,9 +20,6 @@ amqp.connect({url: 'amqp://localhost', username: 'guest', password: 'guest', por
         if (error1) {
             throw error1;
         }
-
-        var queue = 'hello';
-        var msg = 'Hello World!';
 
         channel.assertQueue(queue, {
             durable: false
