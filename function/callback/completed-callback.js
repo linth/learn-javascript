@@ -16,18 +16,22 @@
 */
 
 
-// writing example 1:
-const el = document.getElementById('my_button');
+{
+  // writing example 1:
+  const el = document.getElementById('my_button');
 
-el.addEventListener('click', function() {
-    console.log('hello world.');
-}, false);
-
-
-// writing example 2: build functions.
-function callback() {
-    console.log('hello world.');
+  el.addEventListener('click', function() {
+      console.log('hello world.');
+  }, false);
 }
 
-const el = document.getElementById('my_button');
-el.addEventListener('click', callback, false);
+
+{
+  // writing example 2: build functions.
+  function callback() {
+    console.log('hello world.');
+  }
+
+  const el = document.getElementById('my_button');
+  el.addEventListener('click', callback, false);
+}
