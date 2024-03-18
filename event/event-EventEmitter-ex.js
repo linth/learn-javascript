@@ -12,6 +12,9 @@ const EventEmitter = require('node:events')
 
   }
 
+  /**
+   * user case: 當發生發送 'event' 後, 監聽者 newListener執行列印 'B', 另一個任務觸發為收到 'event', 則列印 'A'。
+   */
   const myEmitter = new MyEmitter();
 
   myEmitter.once('newListener', (event, listener) => {
