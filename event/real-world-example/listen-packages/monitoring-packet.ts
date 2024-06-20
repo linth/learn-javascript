@@ -1,6 +1,11 @@
 /**
  * monitoring packets
  *  - addListener() and on() 兩個使用方法皆一致
+ *  - once(): 最多只會觸發一次, 觸發後立刻解除該監聽器
+ *  - off()
+ *  - removeAllListeners()
+ *  - setMaxListeners()
+ *  
  * 
  * Reference:
  *  - https://www.runoob.com/nodejs/nodejs-event.html
