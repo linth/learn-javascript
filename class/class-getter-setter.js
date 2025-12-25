@@ -8,24 +8,26 @@
  */
 
 
-class Polygon {
+{
+  class Polygon {
     constructor(h, w) {
-        this.height = h;
-        this.width = w;
+      this.height = h;
+      this.width = w;
     }
-
+  
     // Getter
     get area() {
-        return this.calcArea();
+      return this.calcArea();
     }
-
+  
     // Method
     calcArea() {
-        return this.height * this.width;
+      return this.height * this.width;
     }
+  }
+  
+  
+  const square = new Polygon(10, 10);
+  console.log(square.area); // 100
 }
-
-
-const square = new Polygon(10, 10);
-console.log(square.area);
 
