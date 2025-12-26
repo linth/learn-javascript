@@ -45,6 +45,14 @@
     const new_rest = rest.filter(item => item > 4)
       .map(item => item * 10);
       console.log(new_rest); // [50]
+
+    // 過濾 -> 資料處理產生新的陣列 map [...]，也要用 map 列印要 return
+    rest
+      .filter(item => item > 4)
+      .map(item => {
+        console.log('----->', item); // -----> 5
+        return item;
+      });
   }
 
   // setArguments(1, 2, 3); // 1 2 3, []
