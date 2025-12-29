@@ -9,6 +9,10 @@ Goal: how to use function concept to isolate another code.
   - control flow
   - imperative & declarative
 
+
+字面值建立函式: Function Literal（函式字面值）。
+
+
 keyword:
   - function
   - javascript
@@ -60,6 +64,28 @@ const assert = require("assert");
    * 另外，你可以嘗試將 inner 函式放到不同位置看看！
    */
 }
+
+
+{
+  // 什麼是「字面值建立函式」？
+  function sayHi() {
+    console.log("(general) Hi");
+  }
+
+  const sayHi = () => {
+    console.log("(arrow function) Hi");
+  }
+
+  /**
+   * 這叫 Function Literal（函式字面值）: 一般 function & arrow function 都是函式字面值
+   */
+
+  const n = 5;          // number literal
+  const s = "hello";   // string literal
+  const o = { a: 1 };  // object literal
+  // 👉 function() {…} 本身就是一個「函式字面值」。
+}
+
 
 
 
