@@ -1,13 +1,39 @@
 /**
+ * 函式作為物件 (object)
+ * 
  * 利用含有 a 與 b 屬性的 f 函式，建立一個 o 物件
  * 
  * Reference:
  *  - https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
  */
 
+{
+  var compareNumber = {
+    isLargerThan5: function(n) {
+      return n > 5 ? true : false;
+    },
+
+    lg100 : function isLargerThan100(n) {
+      return n > 100 ? true : false;
+    }
+  };
+
+  console.log(compareNumber.isLargerThan5(10)); // true
+  console.log(compareNumber.isLargerThan5(2)); // false 
+  console.log(compareNumber.lg100(111)); // true
+
+  var newCheck = {
+    isLargerThan5: compareNumber.isLargerThan5,
+  };
+
+  console.log(newCheck.isLargerThan5(100)); // true
+  console.log(newCheck.isLargerThan5(3)); // false
+}
+
+
 let f = function() {
-    this.a = 1;
-    this.b = 2;
+  this.a = 1;
+  this.b = 2;
 }
 
 let o = new f(); 
