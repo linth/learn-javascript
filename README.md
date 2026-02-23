@@ -17,6 +17,7 @@
 - 條件語句（if、else if、else）
 - 迴圈（for、while、do...while）
 - switch 語句
+- break、continue、return
 
 ### 函式 (Function)
 - 函式宣告和呼叫
@@ -42,7 +43,7 @@
 - callback function
 - Promise
 - async/await
-- async (event-loop)
+- async (event-loop) => `重要`
 
 ### 錯誤處理 (Error Handling)
 - try-catch-finally
@@ -57,7 +58,7 @@
 - Map（鍵可以是任何類型）
 - Set（不重複集合）
 - WeakMap / WeakSet
-- 自行實作常見結構
+- 自行實作常見結構  => `重要`
 - Stack
 - Queue
 - Linked List
